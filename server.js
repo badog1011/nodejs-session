@@ -14,7 +14,7 @@ var connect = require("connect")
 **/
 
 var server = connect(
-	connect.logger('dev')
+	 connect.logger('dev')
    ,connect.bodyParser()
    ,connect.cookieParser()
    ,connect.session({ secret: 'my app secret' })
@@ -71,4 +71,3 @@ var server = connect(
    }
 );
 
-server.listen(3000);
